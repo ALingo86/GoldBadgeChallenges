@@ -22,22 +22,18 @@ namespace _03_KomodoOutings
                 } 
             }
             public decimal CostOfEvent { get; set; }
-            //public Outings CostOfEvents { get; }
-
             public Outings() { }
             public Outings
                 (
                 string eventType,
                 int numberOfPeople,
                 DateTime dateOfEvent,
-                //decimal costPerPerson,
                 decimal costOfEvent
                 )
             {
                 EventType = eventType;
                 NumberOfPeople = numberOfPeople;
                 DateOfEvent = dateOfEvent;
-                //CostPerPerson = costPerPerson;
                 CostOfEvent = costOfEvent;
 
             }
@@ -46,11 +42,6 @@ namespace _03_KomodoOutings
             {
                 return $"{EventType}\n,{NumberOfPeople}\n,{DateOfEvent}\n,{CostOfEvent:C2}\n,{CostPerPerson:C2}\n";
             }
-
-            //public Outings(Outings costOfEvents)
-            //{
-            //    CostOfEvents = costOfEvents;
-            //}
         }
 
     }

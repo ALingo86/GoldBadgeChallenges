@@ -68,16 +68,6 @@ namespace _02_Komodo_ClaimsUI
         private void SeeNextClaim()
         {
             Console.Clear();
-            //Console.WriteLine
-            //($"{claims.GetType().Name}\n" +
-            //$"ClaimID: {claims.ClaimID}\n" +
-            //$"ClaimType: {claims.ClaimType}\n" +
-            //$"Claim Description: {claims.ClaimDescription}\n" +
-            // $"Claim Amount: ${claims.ClaimAmount}\n" +
-            //$"Claim Date of Incident: {claims.DateOfIncident}\n" +
-            //$"Claim Date of Claim: {claims.DateOfClaim}\n" +
-            //$"valid? {claims.IsValid}\n" +
-            //$"=========================\n" +
             Console.WriteLine($"Here is the next case:   {SeeNextInQueue()}");
             Console.WriteLine( $"Did you want to work on this claim now? (y/n)");
             if (Console.ReadLine() == "y")
@@ -146,16 +136,6 @@ namespace _02_Komodo_ClaimsUI
 
 
         }
-
-        //static public void Class()
-        //{
-            //Queue cQ = new Queue();
-            //cQ.Enqueue(1);
-            //foreach (var ele in cQ)
-            //{
-            //    Console.WriteLine(ele);
-            //}
-        //}
         private void SeedContent()
         {
             Claims firstclaim = new Claims();

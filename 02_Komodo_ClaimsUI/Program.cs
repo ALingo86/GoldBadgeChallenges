@@ -10,8 +10,6 @@ namespace _02_Komodo_ClaimsUI
     {
         static void Main(string[] args)
         {
-            //Queue<string> IncidentQueue = new Queue<string>();
-
             ProgramUI ui = new ProgramUI();
 
             ui.Run();

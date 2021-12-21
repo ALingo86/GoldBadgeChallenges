@@ -29,10 +29,7 @@ namespace _03_KomodoOutings
                 totalCost += outing.CostOfEvent;
             }
             return totalCost;
-
-            //return _outings.Sum(o => o.CostOfEvent);
         }
-
         public List<Outings> GetAllOutingsByType(string eventType)
         {
             List<Outings> listByType = new List<Outings>();
@@ -43,10 +40,8 @@ namespace _03_KomodoOutings
                 {
                     listByType.Add(outing);
                 }
-
             }
             return listByType;
-
         }
         public decimal CostOfOutingsByType(string eventType)
         {
@@ -56,19 +51,10 @@ namespace _03_KomodoOutings
             {
                 if (outing.EventType.ToString() == eventType)
                 {
-
-
-
                     totalCost += outing.CostOfEvent;
-
-
                 }
-
-
             }
             return totalCost;
-
-
         }
 
     }

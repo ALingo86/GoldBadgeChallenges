@@ -17,7 +17,6 @@ namespace _03_KomodoOutingsUI
             SeedContent();
             ShowMenu();
         }
-
         private void ShowMenu()
         {
             bool continueToRun = true;
@@ -52,19 +51,9 @@ namespace _03_KomodoOutingsUI
                         Console.WriteLine("Please enter a valid selection");
                         Console.ReadLine();
                         break;
-
-
-
-
-
-
                 }
-
-
             }
         }
-
-
         private void ShowAllOutings()
         {
             List<Outings> outings = _outings.GetAllOutings();
@@ -73,9 +62,7 @@ namespace _03_KomodoOutingsUI
                 DisplayOutingList(outing);
             }
             Console.Read();
-
         }
-
         private void DisplayOutingList(Outings outings)
         {
             Console.WriteLine
@@ -93,7 +80,6 @@ namespace _03_KomodoOutingsUI
             Console.WriteLine($"The combined cost is: {_outings.CostOfAllOutings()}");
             Console.ReadKey();
         }
-
         private void ShowEventByType()
         {
             Console.Clear();
@@ -106,34 +92,6 @@ namespace _03_KomodoOutingsUI
             }
             Console.ReadKey();
         }
-        //{
-        //    Console.Clear();
-        //    Console.WriteLine("Input an event type (Golf, Bowling, Amusement Park, Concert):"); 
-        //    if (Console.ReadLine() == "Golf")
-            
-        //    {
-        //        //Console.WriteLine($"{_outings.GetType()}");
-        //        return _outings.EventType.Equals("Golf");
-        //    }
-        //    if (Console.ReadLine() =="Bowling")
-        //    {
-
-        //    }
-        //    if (Console.ReadLine() =="Amusement Park")
-        //    {
-
-        //    }
-        //    if (Console.ReadLine() =="Concert")
-        //    {
-
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Please input a valid selection.");
-        //    }
-        //}
-        
-        
         private void ShowCostByType()
         {
             Console.Clear();
@@ -143,7 +101,6 @@ namespace _03_KomodoOutingsUI
             Console.WriteLine($"Total Outing Cost: {outings}");
             Console.ReadKey();
         }
-
         private void SeedContent()
         {
             Outings one = new Outings();
